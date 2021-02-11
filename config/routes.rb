@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     resources :doses, only: [ :new, :create,  ]
   end
   resources :doses, only: [ :destroy ]
-end
+  end
 
   # get '/dose/:dose_id' to 'dose#destroy'

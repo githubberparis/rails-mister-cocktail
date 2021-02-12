@@ -75,8 +75,6 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.11.2)
-      activesupport (>= 5.0.0)
     listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -90,10 +88,12 @@ GEM
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
+    mini_portile2 (2.5.0)
     minitest (5.14.3)
     msgpack (1.4.2)
     nio4r (2.5.5)
-    nokogiri (1.11.1-x86_64-linux)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (1.2.3)
     puma (4.3.7)
@@ -202,14 +202,13 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   autoprefixer-rails
   bootsnap (>= 1.4.2)
   byebug
   font-awesome-sass (~> 5.12.0)
-  jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
@@ -229,4 +228,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.2.4
+   2.1.4
